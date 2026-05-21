@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8fafc; /* Un gris muy claro para el fondo */
+  --foreground: #0f172a;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+/* globals.css */
+@layer components {
+  .input-field {
+    @apply w-full px-4 py-2.5 border border-slate-200 rounded-lg outline-none 
+           transition-all text-slate-700 bg-white shadow-sm
+           focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500
+           placeholder:text-slate-400;
+  }
+}
